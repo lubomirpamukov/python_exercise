@@ -62,4 +62,36 @@ add_attraction("Cairo, Egypt", ["Egyptian Museum", ["museum"]])
 test_destination_index = get_traveler_location(test_traveler)
 la_arts = find_attractions("Los Angeles, USA", ['art'])
 smills_france = get_attractions_for_traveler(['Dereck Smill', 'Paris, France', ['monument']])
-print(smills_france)
+#print(smills_france)
+
+
+# String operations
+def password_generator(username):
+  password = username[-1]
+  
+  for letter in username:
+    password = password + letter
+  return password[:-1]
+#print(password_generator("AbeSimp"))
+
+
+#better performance version
+def password_generator_performance(username):
+  return username[-1] + username[:-1]
+#print(password_generator_performance("AbeSimp"))
+
+
+#Get last name from an array of strings
+def get_last_name(names):
+  return [name.split()[-1] for name in names]
+
+#print(get_last_name(['Audre Lorde', 'Gabriela Mistral', 'Jean Toomer', 'An Qi', 'Walt Whitman', 'Shel Silverstein', 'Carmen Boullosa', 'Kamala Suraiyya', 'Langston Hughes', 'Adrienne Rich', 'Nikki Giovanni']))
+
+
+
+
+
+
+
+
+
